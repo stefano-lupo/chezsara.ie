@@ -1,0 +1,7 @@
+# robots.txt generated at http://www.mcanerin.com
+User-agent: *
+Disallow: 
+Disallow: /cgi-bin/
+Disallow: /admin.php
+Disallow: /from-the-kitchen.php
+Sitemap: http://www.chezsara.ie/sitemap.xml
