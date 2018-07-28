@@ -45,7 +45,7 @@
 	            </form>
            	</div>
 
-<?
+<?php
            }
   
   //Session Variables and Post Variables are incorrect. Re-Enter Log in Details
@@ -60,7 +60,7 @@
             	<input type="submit" name="submit" value="Go"></input>
             </form>
             </div>
-<?
+<?php
 
   }
 
@@ -144,7 +144,7 @@ $gallery = getMatrix("SELECT * FROM `gallery`");
 								<tr>
 									<th>Starters</th><th></th><th></th><th></th><th></th>
 								</tr>
-								<?
+								<?php
 								// Starter
 								foreach ($earlyBird as $row) {
 									if ($row['Plate'] == "Starter") {
@@ -250,7 +250,7 @@ $gallery = getMatrix("SELECT * FROM `gallery`");
 								<tr>
 									<th>Starters</th><th></th><th></th><th></th><th></th>
 								</tr>
-								<?
+								<?php
 								// Starter
 								foreach ($normal as $row) {
 									if ($row['Plate'] == "Starter") {
@@ -385,7 +385,7 @@ $gallery = getMatrix("SELECT * FROM `gallery`");
 								<tr>
 									<th>White</th><th></th><th></th><th></th><th></th><th></th><th></th>
 								</tr>
-								<?
+								<?php
 								// White Bottles
 								foreach ($bottles as $row) {
 									if ($row['Type'] == "White") {
@@ -515,7 +515,7 @@ $gallery = getMatrix("SELECT * FROM `gallery`");
 								<tr>
 									<th>White</th><th></th><th></th><th></th><th></th><th></th><th></th>
 								</tr>
-								<?
+								<?php
 								// White Bottles
 								foreach ($bottleGlass as $row) {
 									if ($row['Type'] == "White") {
@@ -671,7 +671,7 @@ $gallery = getMatrix("SELECT * FROM `gallery`");
 					<input type="hidden" name="type" value="delete-food">
 					<div class="row">
 
-					<?
+					<?php
 					$i = 0;
 					foreach ($gallery as $row) {
 						if ($row['Type'] == "Food") {
@@ -718,7 +718,7 @@ $gallery = getMatrix("SELECT * FROM `gallery`");
 					<input type="hidden" name="type" value="delete-wine">
 					<div class="row">
 
-					<?
+					<?php
 					$i = 0;
 					foreach ($gallery as $row) {
 						if ($row['Type'] == "Wine") {
@@ -765,7 +765,7 @@ $gallery = getMatrix("SELECT * FROM `gallery`");
 					<input type="hidden" name="type" value="delete-restaurant">
 					<div class="row">
 
-					<?
+					<?php
 					$i = 0;
 					foreach ($gallery as $row) {
 						if ($row['Type'] == "Restaurant") {
@@ -796,7 +796,7 @@ $gallery = getMatrix("SELECT * FROM `gallery`");
 					<tr>
 						<th>Name</th><th>Description</th><th>Update</th><th>Delete</th>
 					</tr>
-					<?
+					<?php
 					foreach ($events as $row) {
 							echo '<form  action="processing/processEvents.php" method="post"><tr>';
 							echo '<input type="hidden" name="ID" value="' . $row["ID"] . '"></input><td><input name="name" value="' . $row['Name'] . '"></input></td> <td><textarea name="description">' . $row["Description"] . '</textarea></td><td><button type="submit" name="operation" value="update">Update</td> <td><button class="red" name="operation" value="delete" type="submit">Delete</td>';
@@ -845,7 +845,7 @@ $gallery = getMatrix("SELECT * FROM `gallery`");
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 
-<?
+<?php
 }
 
 ?>

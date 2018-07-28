@@ -33,7 +33,7 @@ include 'generic/navbar.php';
 	</head>
 
 	<body style="padding-top:0">
-		<? getNav("index.php"); ?>
+		<?php getNav("index.php"); ?>
 
 		<header id="mobile-header">
 
@@ -214,7 +214,7 @@ include 'generic/navbar.php';
 
 		</div>
 
-		<?
+		<?php
 		include 'generic/footer.php';
 		?>
 

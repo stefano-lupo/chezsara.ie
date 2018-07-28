@@ -34,7 +34,7 @@
 </head>
 
 <body id="about">
-	<? getNav("about.php");?>
+	<?php getNav("about.php");?>
 
 
     <div class="container-fluid larger-container">
@@ -86,7 +86,7 @@
 
     </div>
 
-	<? include 'generic/footer.php'; ?>
+	<?php include 'generic/footer.php'; ?>
 
 
 

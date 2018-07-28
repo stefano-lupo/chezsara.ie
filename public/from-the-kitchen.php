@@ -33,7 +33,7 @@
 </head>
 
 <body id="from-the-kitchen">
-<? getNav("from-the-kitchen.php");?>
+<?php getNav("from-the-kitchen.php");?>
 
 
     <div class="container-fluid larger-container">
@@ -296,7 +296,7 @@
 
 	</div>
 
-<? include 'generic/footer.php'; ?>
+<?php include 'generic/footer.php'; ?>
 
 
     <!-- jQuery -->

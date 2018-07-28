@@ -37,7 +37,7 @@ $pics = getMatrix("SELECT * FROM `gallery` ORDER BY Date DESC");
 
 	<body>
 
-		<? getNav("gallery.php"); ?>
+		<?php getNav("gallery.php"); ?>
 
 		<!-- Page Content -->
 		<div class="container-fluid" id="gallery">
@@ -46,7 +46,7 @@ $pics = getMatrix("SELECT * FROM `gallery` ORDER BY Date DESC");
 			<div class="row no-padding">
 				<h2 class="page-header">Food</h2>
 
-				<?
+				<?php
 				$i = 0;
 				foreach($pics as $row){
 					if($row['Type'] == "Food"){
@@ -68,7 +68,7 @@ $pics = getMatrix("SELECT * FROM `gallery` ORDER BY Date DESC");
 			<div class="row no-padding">
 				<h2 class="page-header">Wine</h2>
 
-				<?
+				<?php
 				$i = 0;
 				foreach($pics as $row){
 					if($row['Type'] == "Wine"){
@@ -89,7 +89,7 @@ $pics = getMatrix("SELECT * FROM `gallery` ORDER BY Date DESC");
 			<div class="row no-padding">
 				<h2 class="page-header">Restaurant</h2>
 
-				<?
+				<?php
 				$i = 0;
 				foreach($pics as $row){
 					if($row['Type'] == "Restaurant"){
@@ -109,7 +109,7 @@ $pics = getMatrix("SELECT * FROM `gallery` ORDER BY Date DESC");
 		</div>
 		<br><br><br>
 
-		<?
+		<?php
 	include 'generic/footer.php';
  ?>
 

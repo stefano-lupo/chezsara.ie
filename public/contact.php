@@ -33,7 +33,7 @@ include 'generic/navbar.php';
 	</head>
 
 	<body>
-		<? getNav("contact.php"); ?>
+		<?php getNav("contact.php"); ?>
 
 		<div class="container" id="contact">
 			<div class="row">
@@ -112,7 +112,7 @@ include 'generic/navbar.php';
 			</form>
 		</div>
 
-		<? include 'generic/footer.php';?>
+		<?php include 'generic/footer.php';?>
 
 		<div id="submitted-modal" class="modal" tabindex="-1" role="dialog">
 			<div class="modal-dialog" role="document">

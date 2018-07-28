@@ -39,7 +39,7 @@ $bottleGlass = getMatrix("SELECT * FROM `bottle-and-glass`");
 	</head>
 
 	<body>
-		<? getNav("menus.php"); ?>
+		<?php getNav("menus.php"); ?>
 
 		<!-- Page Content -->
 		<div class="container-fluid larger-container" id="menu">
@@ -81,7 +81,7 @@ $bottleGlass = getMatrix("SELECT * FROM `bottle-and-glass`");
 									<th><h3 class="page-header">Starters</h3></th>
 									<th><h3 class="page-header text-center">€</h3></th>
 								</tr>
-								<?
+								<?php
 								foreach ($normal as $row) {
 									if ($row['Plate'] == "Starter") {
 										echo '<tr><td><p><strong>' . $row["Name"] . '</strong></p><p>' . $row["Description"] . '</p></td><td class="text-center"><strong>' . $row["Price"] . '</strong></td></tr>';
@@ -96,7 +96,7 @@ $bottleGlass = getMatrix("SELECT * FROM `bottle-and-glass`");
 									<th><h3 class="page-header">Main Courses</h3></th>
 									<th><h3 class="page-header text-center">€</h3></th>
 								</tr>
-								<?
+								<?php
 								foreach ($normal as $row) {
 									if ($row['Plate'] == "Main Course") {
 										echo '<tr><td><p><strong>' . $row["Name"] . '</strong></p><p>' . $row["Description"] . '</p></td><td class="text-center"><strong>' . $row["Price"] . '</strong></td></tr>';
@@ -113,7 +113,7 @@ $bottleGlass = getMatrix("SELECT * FROM `bottle-and-glass`");
 									<th><h3 class="page-header">Side Orders</h3></th>
 									<th><h3 class="page-header text-center">€</h3></th>
 								</tr>
-								<?
+								<?php
 								foreach ($normal as $row) {
 									if ($row['Plate'] == "Side Order") {
 										echo '<tr><td><p><strong>' . $row["Name"] . '</strong></p><p>' . $row["Description"] . '</p></td><td class="text-center"><strong>' . $row["Price"] . '</strong></td></tr>';
@@ -128,7 +128,7 @@ $bottleGlass = getMatrix("SELECT * FROM `bottle-and-glass`");
 									<th><h3 class="page-header">Deserts</h3></th>
 									<th><h3 class="page-header text-center">€</h3></th>
 								</tr>
-								<?
+								<?php
 								foreach ($normal as $row) {
 									if ($row['Plate'] == "Dessert") {
 										echo '<tr><td><p><strong>' . $row["Name"] . '</strong></p><p>' . $row["Description"] . '</p></td><td class="text-center"><strong>' . $row["Price"] . '</strong></td></tr>';
@@ -145,7 +145,7 @@ $bottleGlass = getMatrix("SELECT * FROM `bottle-and-glass`");
 									<th><h3 class="page-header">To Finish</h3></th>
 									<th><h3 class="page-header text-center">€</h3></th>
 								</tr>
-								<?
+								<?php
 								foreach ($normal as $row) {
 									if ($row['Plate'] == "To Finish") {
 										echo '<tr><td><p><strong>' . $row["Name"] . '</strong></p><p>' . $row["Description"] . '</p></td><td class="text-center"><strong>' . $row["Price"] . '</strong></td></tr>';
@@ -170,7 +170,7 @@ $bottleGlass = getMatrix("SELECT * FROM `bottle-and-glass`");
 								<tr>
 									<th><h3 class="page-header">Starters</h3></th>
 								</tr>
-								<?
+								<?php
 								foreach ($earlyBird as $row) {
 									if ($row['Plate'] == "Starter") {
 										if ($row['Suppliment'] != 0) {
@@ -189,7 +189,7 @@ $bottleGlass = getMatrix("SELECT * FROM `bottle-and-glass`");
 								<tr>
 									<th><h3 class="page-header">Main Courses</h3></th>
 								</tr>
-								<?
+								<?php
 								foreach ($earlyBird as $row) {
 									if ($row['Plate'] == "Main Course") {
 										if ($row['Suppliment'] != 0) {
@@ -203,7 +203,7 @@ $bottleGlass = getMatrix("SELECT * FROM `bottle-and-glass`");
 							</table>
 						</div>
 					</div>
-					<?
+					<?php
 					$dessert = false;
 					foreach($earlyBird as $row){
 					if($row['Plate'] == "Dessert"){
@@ -219,7 +219,7 @@ $bottleGlass = getMatrix("SELECT * FROM `bottle-and-glass`");
 									<th><h3 class="page-header">Desserts</h3></th>
 									<th><h3 class="page-header">€</h3></th>
 								</tr>
-								<?
+								<?php
 								foreach ($earlyBird as $row) {
 									if ($row['Plate'] == "Dessert") {
 										if ($row['Suppliment'] != 0) {
@@ -234,7 +234,7 @@ $bottleGlass = getMatrix("SELECT * FROM `bottle-and-glass`");
 							</table>
 						</div>
 					</div>
-					<?
+					<?php
 					}
 					?>
 					<div class="row">
@@ -268,7 +268,7 @@ $bottleGlass = getMatrix("SELECT * FROM `bottle-and-glass`");
 									<th><h3 class="page-header text-center">€</h3></th>
 
 								</tr>
-								<?
+								<?php
 								foreach ($bottles as $row) {
 									if ($row['Type'] == "Red") {
 										echo '<tr><td><p><strong>' . $row["Name"] . '</strong></p><p>' . $row["Description"] . '</p></td><td>' . $row['Grape'] . '</td><td>' . $row["Origin"] . '</td><td class="text-center"><strong>' . $row['Price'] . '</strong></td></tr>';
@@ -287,7 +287,7 @@ $bottleGlass = getMatrix("SELECT * FROM `bottle-and-glass`");
 									<th><h3 class="page-header text-center">€</h3></th>
 
 								</tr>
-								<?
+								<?php
 								foreach ($bottles as $row) {
 									if ($row['Type'] == "White") {
 										echo '<tr><td><p><strong>' . $row["Name"] . '</strong></p><p> ' . $row["Description"] . '</p></td><td>' . $row['Grape'] . '</td><td>' . $row["Origin"] . '</td><td class="text-center"><strong>' . $row['Price'] . '</strong></td></tr>';
@@ -308,7 +308,7 @@ $bottleGlass = getMatrix("SELECT * FROM `bottle-and-glass`");
 									<th><h3 class="page-header text-center">€</h3></th>
 
 								</tr>
-								<?
+								<?php
 								foreach ($bottles as $row) {
 									if ($row['Type'] == "Rose") {
 										echo '<tr><td><p><strong>' . $row["Name"] . '</strong></p><p>' . $row["Description"] . '</p></td><td>' . $row['Grape'] . '</td><td>' . $row["Origin"] . '</td><td class="text-center"><strong>' . $row['Price'] . '</strong></td></tr>';
@@ -327,7 +327,7 @@ $bottleGlass = getMatrix("SELECT * FROM `bottle-and-glass`");
 									<th><h3 class="page-header text-center">€</h3></th>
 
 								</tr>
-								<?
+								<?php
 								foreach ($bottles as $row) {
 									if ($row['Type'] == "Bubbly") {
 										echo '<tr><td><p><strong>' . $row["Name"] . '</strong></p><p>' . $row["Description"] . '</p></td><td>' . $row['Grape'] . '</td><td>' . $row["Origin"] . '</td><td class="text-center"><strong>' . $row['Price'] . '</strong></td></tr>';
@@ -351,7 +351,7 @@ $bottleGlass = getMatrix("SELECT * FROM `bottle-and-glass`");
 									<th><h3 class="page-header text-center">Bottle</h3></th>
 
 								</tr>
-								<?
+								<?php
 								foreach ($bottleGlass as $row) {
 									if ($row['Type'] == "Red") {
 										echo '<tr><td><p><strong>' . $row["Name"] . '</strong></p><p>' . $row["Description"] . '</p></td><td class="text-center"><strong>' . $row['Glass'] . '</strong></td><td class="text-center"><strong>' . $row["Bottle"] . '</strong></td></tr>';
@@ -372,7 +372,7 @@ $bottleGlass = getMatrix("SELECT * FROM `bottle-and-glass`");
 	
 
 								</tr>
-								<?
+								<?php
 								foreach ($bottleGlass as $row) {
 									if ($row['Type'] == "White") {
 										echo '<tr><td><p><strong>' . $row["Name"] . '</strong></p><p> ' . $row["Description"] . '</p></td><td class="text-center"><strong>' . $row['Glass'] . '</strong></td><td class="text-center"><strong>' . $row["Bottle"] . '</strong></td></tr>';
@@ -386,7 +386,7 @@ $bottleGlass = getMatrix("SELECT * FROM `bottle-and-glass`");
 			</div>
 		</div>
 
-		<?
+		<?php
 		include 'generic/footer.php';
 		?>
 

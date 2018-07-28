@@ -35,7 +35,7 @@
 </head>
 
 <body>
-	<? getNav("events.php");?>
+	<?php getNav("events.php");?>
 
     <!-- Page Content -->
     <div class="container-fluid larger-container md-center" id="events">
@@ -67,7 +67,7 @@
             <div class="col-lg-6">
                 <h2 class="red text-center">Upcoming Events</h2>
                 <hr>
-                <?
+                <?php
                 	foreach ($events as $row){
                 		echo '<h3>'.$row["Name"].'</h3>';
 						echo '<p>'.nl2br($row["Description"]).'</p>';
@@ -78,7 +78,7 @@
         </div>
     </div>
 
-<? include 'generic/footer.php'; ?>
+<?php include 'generic/footer.php'; ?>
 
 
 
