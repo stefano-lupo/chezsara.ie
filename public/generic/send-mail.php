@@ -9,8 +9,10 @@ $numGuests = $postArray[3];
 $date = $postArray[4];
 
 // Format of $date is yyyy-mm-dd
-if ($date = date_create_from_format("Y-m-j", $date)){
-  $date = date_format($date, "j-M-Y");
+if ($parsedDate = date_create_from_format("Y-m-j", $date)){
+  $parsedDate = date_format($parsedDate, "j-M-Y");
+} else {
+  $parsedDate = $date;
 } 
 
 $time = $postArray[5];
@@ -22,7 +24,6 @@ if (count($postArray) > 6) {
 }
 
 $to='info@chezsara.ie';
-// $to = 'stefano@stefanolupo.tech';
 
 $subject = 'Table Reservation Request';
 $headers = 'MIME-Version: 1.0'."\r\n";
@@ -42,7 +43,7 @@ $email = '
 <h4>Phone Number: '.$phone.'</h4>
 <h4>Email: '.$emailAddress.'</h4>
 
-<p>Table required for '.$numGuests.' people on '.$date.' at '.$time.'.</p>
+<p>Table required for '.$numGuests.' people on '.$parsedDate.' at '.$time.'.</p>
 <p>'.$message.'</p>
 <p>Please reply to this email in order to confirm or deny the booking.</p>
 </body>

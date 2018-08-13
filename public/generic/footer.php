@@ -57,7 +57,7 @@
                 <p>Copyright Chez Sara <?php echo date("Y"); ?></p>
             </div>
             <div class="col-sm-6">
-                <p>Designed by <a href="http://stefanolupo.tech/web-design.php" target="_blank">Stefano Lupo Web Design</a></p>
+                <p>Designed by <a href="http://www.stefanolupo.com" target="_blank">Stefano Lupo</a></p>
             </div>
         </div>
     </div>
