@@ -158,11 +158,11 @@ include 'generic/navbar.php';
 					</p>
 
 					<p>
-						<strong>Two Course Set Menu - €20 per person</strong>
+						<strong>Two Course Set Menu - €22 per person</strong>
 					</p>
 
 					<p>
-						<strong>Two Course Set Menu for 2 People with Bottle of House Wine - €60</strong>
+						<strong>Two Course Set Menu for 2 People with Bottle of House Wine - €65</strong>
 					</p>
 					<br>
 					<a href="menus.php" class="btn margin-bottom">Early Bird Menu</a>

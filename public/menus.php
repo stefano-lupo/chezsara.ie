@@ -241,10 +241,10 @@ $bottleGlass = getMatrix("SELECT * FROM `bottle-and-glass`");
 						<div class="col-md-8 col-md-offset-2 text-center">
 							<h3 class="page-header">Prices</h3>
 							<p>
-								<strong>Two Course Set Menu - €20 per person</strong>
+								<strong>Two Course Set Menu - €22 per person</strong>
 							</p>
 							<p>
-								<strong>Two Course Set Menu for 2 People with Bottle of House Wine - €60</strong>
+								<strong>Two Course Set Menu for 2 People with Bottle of House Wine - €65</strong>
 							</p>
 							<p>
 								Available Sunday - Thursday from 5pm - 7pm.
