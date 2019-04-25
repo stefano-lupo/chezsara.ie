@@ -66,6 +66,16 @@ include 'generic/navbar.php';
 		</div>
 
 		<div id="page-content" class="container-fluid larger-container">
+		<div class="row">
+				<div class="col-lg-6 col-lg-offset-3 text-center" style="background-color:#8a1c26; color:white; padding:1%">
+					<h3>Closing Down on May 5th</h3>
+					<div>
+						<p>Unfortunately we are a closing down on the 5th of May.
+						<br>It has been a pleasure to serve all of our patrons over the years!</p>
+						<p>Thank you all for supporting Chez Sara!</p>
+					</div>
+				</div>
+			</div>
 			<div class="row no-padding-bottom">
 				<div class="col-lg-12">
 					<h2 class="decorated"><span>The Recepie For A Perfect Evening</span></h2>
