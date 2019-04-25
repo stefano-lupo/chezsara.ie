@@ -71,5 +71,5 @@ Chez Sara<br>
 Phone: 01 845 1882<br>
 Email: info@chezsara.ie<br>
 Website: <a href="www.chezsara.ie">www.chezsara.ie</a><br>';
-mail($emailAddress,"Chez Sara Booking Confirmation", $message, $headers2);
+//mail($emailAddress,"Chez Sara Booking Confirmation", $message, $headers2);
 ?>

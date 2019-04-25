@@ -66,7 +66,8 @@ include 'generic/navbar.php';
 		</div>
 
 		<div id="page-content" class="container-fluid larger-container">
-			<div class="row no-padding-bottom">
+
+					<div class="row no-padding-bottom">
 				<div class="col-lg-12">
 					<h2 class="decorated"><span>The Recepie For A Perfect Evening</span></h2>
 				</div>
