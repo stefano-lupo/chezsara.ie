@@ -36,6 +36,17 @@ include 'generic/navbar.php';
 		<?php getNav("contact.php"); ?>
 
 		<div class="container" id="contact">
+
+		<div class="row">
+				<div class="col-lg-6 col-lg-offset-3 text-center" style="background-color:#8a1c26; color:white; padding:1%">
+					<h3>Closing Down on May 5th</h3>
+					<div>
+						<p>Unfortunately we are a closing down on the 5th of May.
+						<br>It has been a pleasure to serve all of our patrons over the years!</p>
+						<p>Thank you all for supporting Chez Sara!</p>
+					</div>
+				</div>
+			</div>
 			<div class="row">
 				<div class="col-lg-12">
 					<h1 class="page-header">Reserve A Table </h1>
